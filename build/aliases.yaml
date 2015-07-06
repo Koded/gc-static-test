@@ -1,0 +1,10 @@
+default:
+  - build
+
+gather:
+  - gathercontent
+  - build
+
+build:
+  - clean
+  - assemble

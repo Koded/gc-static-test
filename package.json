@@ -1,0 +1,60 @@
+{
+  "name": "boilerplate-site",
+  "description": "Boilerplate for generating a basic static site with Assemble.",
+  "version": "0.1.2",
+  "homepage": "https://github.com/assemble/boilerplate-site",
+  "author": {
+    "name": "Assemble",
+    "url": "https://github.com/assemble/assemble"
+  },
+  "contributors": [
+    {
+      "name": "Jon Schlinkert",
+      "url": "https://github.com/jonschlinkert"
+    },
+    {
+      "name": "Brian Woodward",
+      "url": "https://github.com/doowb"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/assemble/boilerplate-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/assemble/boilerplate-site/issues"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "grunt assemble"
+  },
+  "devDependencies": {
+    "assemble": "~0.4.4",
+    "es6-promise": "^2.3.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-verb": "~0.2.4",
+    "js-yaml": "^3.3.1",
+    "load-grunt-config": "^0.17.1",
+    "load-grunt-tasks": "^3.2.0",
+    "lodash": "^3.10.0",
+    "request": "^2.58.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/assemble/boilerplate-site/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "assemble example",
+    "assemble",
+    "templates",
+    "handlebars",
+    "site generator",
+    "site builder",
+    "grunt"
+  ]
+}
