@@ -8,3 +8,6 @@ gather:
 build:
   - clean
   - assemble
+
+deploy:
+  - aws_s3:staging

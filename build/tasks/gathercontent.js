@@ -27,9 +27,9 @@ var getProjectPages = function(config) {
   };
 
   return new Promise(function(resolve, reject) {
-    request.post(options, function(err, httpResponse, body) {
-      if ( err ) {
-        reject(err);
+    request.post(options, function(err, response, body) {
+      if ( err || response.statusCode !== 200 ) {
+        reject("Problem connecting to gathercontent, please check credentials.");
       }
       resolve({
         config: config,
