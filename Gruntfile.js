@@ -1,5 +1,6 @@
 var path = require("path");
 var slugg = require("slugg");
+var extend = require('util')._extend;
 
 'use strict';
 
@@ -27,16 +28,22 @@ module.exports = function(grunt) {
     },
 
     postProcess: function(config) {
+
+      config.keys = extend({
+        gathercontent: {},
+        aws: {}
+      }, config.keys);
+
       if ( process.env.GATHERCONTENT_API ) {
-        config.gathercontent.options.apiKey = process.env.GATHERCONTENT_API;
+        config.keys.gathercontent.apiKey = process.env.GATHERCONTENT_API;
       }
 
       if ( process.env.AWS_ID ) {
-        config.aws.options.AWSAccessKeyId = process.env.AWS_ID;
+        config.keys.aws.AWSAccessKeyId = process.env.AWS_ID;
       }
 
       if ( process.env.AWS_KEY ) {
-        config.aws.options.AWSSecretKey = process.env.AWS_KEY;
+        config.keys.aws.AWSSecretKey = process.env.AWS_KEY;
       }
     }
   });
