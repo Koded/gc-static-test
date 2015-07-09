@@ -1,34 +1,13 @@
 {
-  "name": "boilerplate-site",
-  "description": "Boilerplate for generating a basic static site with Assemble.",
-  "version": "0.1.2",
+  "name": "cxp-static-site",
+  "description": "Static site with GatherContent test.",
+  "version": "0.1.0",
   "homepage": "https://github.com/assemble/boilerplate-site",
-  "author": {
-    "name": "Assemble",
-    "url": "https://github.com/assemble/assemble"
-  },
-  "contributors": [
-    {
-      "name": "Jon Schlinkert",
-      "url": "https://github.com/jonschlinkert"
-    },
-    {
-      "name": "Brian Woodward",
-      "url": "https://github.com/doowb"
-    }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/assemble/boilerplate-site.git"
-  },
-  "bugs": {
-    "url": "https://github.com/assemble/boilerplate-site/issues"
-  },
   "engines": {
-    "node": ">=0.8"
+    "node": ">=10.0"
   },
   "scripts": {
-    "test": "grunt assemble"
+    "test": "grunt gather"
   },
   "devDependencies": {
     "assemble": "~0.4.4",
@@ -42,21 +21,7 @@
     "lodash": "^3.10.0",
     "request": "^2.58.0",
     "grunt-aws-s3": "^0.14.0",
-    "slugg": "^0.1.2"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/assemble/boilerplate-site/blob/master/LICENSE-MIT"
-    }
-  ],
-  "keywords": [
-    "assemble example",
-    "assemble",
-    "templates",
-    "handlebars",
-    "site generator",
-    "site builder",
-    "grunt"
-  ]
+    "slugg": "^0.1.2",
+    "grunt-cli": "^0.1.13"
+  }
 }
