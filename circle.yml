@@ -1,0 +1,4 @@
+deployment:
+  staging:
+    commands:
+      - node_modules/grunt-cli/bin/grunt deploy --branch=process.env.CIRCLE_BRANCH
